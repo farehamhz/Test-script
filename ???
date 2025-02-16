@@ -1,0 +1,19 @@
+local Rayfield = loadstring(game:HttpGet("https://sirius.menu/rayfield"))()
+
+local Window = Rayfield:CreateWindow({
+    Name = " ",
+    LoadingTitle = " ",
+    LoadingSubtitle = " ",
+    ConfigurationSaving = {
+       Enabled = false,
+    },
+    Discord = {
+        Enabled = false,
+    },
+    KeySystem = false
+})
+
+-- Tạo tab trống
+local MainTab = Window:CreateTab(" ", 4483362458)
+
+Rayfield:LoadConfiguration()
